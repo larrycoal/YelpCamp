@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+.navbar{
+    margin-bottom: 15px;
+}
+.jumbotron{
+    height: 250px;
+}
+.img-thumbnail{
+    padding: 0 !important;
+    margin: 0;
+}
+.nav-link{
+    margin-right: 10px;
+}
+.form-group{
+    width: 60%;
+}
+.delete_button{
+    display: inline;
+}
+.login{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 100%;
+}
+#login{
+    width: 30%;
+}
+#btn_login{
+    margin-top: 20px;
+}
+
+@keyframes home{
+    0%{margin-left: 0px;}
+    100%{margin-left: 50px;}
+}
+.main{
+    margin-top: 10%;
+    animation-name: home;
+    animation-duration: 3s;
+}
+.test{
+    text-align: center;
+}

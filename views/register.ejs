@@ -1,0 +1,13 @@
+<% include partials/header.ejs%>
+<div class="login">
+    <h1>Register</h1>
+    <form id="login" class='form-group' action="/register" method="POST">
+    <label for="email">Email</label>
+    <input class='form-control' type="email" name="username" id="email" placeholder="Enter Email">
+    <label for="Password">Password</label>
+    <input class='form-control' type="password" name="password" id="password" placeholder="Enter password">
+    <button id="btn_login" class="btn btn-danger float_right">Register</button>
+    </form>
+</div>
+
+<% include partials/footer.ejs%>

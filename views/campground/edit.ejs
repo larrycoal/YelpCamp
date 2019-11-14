@@ -1,0 +1,28 @@
+<% include ../partials/header.ejs%>
+
+<div class="container form">
+        <h1>Add a new campground</h1>
+    <div class="form-group">
+        <form action="/campgrounds/<%=campground._id%>?_method=Put" method="POST">
+            <div class="form-group">
+                <input type="text" name="Edit[name]" value=<%=campground.name%> class="form-control" required>
+            </div>
+            <div class="form-group">
+            <input type="text" name="Edit[image]"  value=<%=campground.image%> class="form-control"required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="Edit[price]"  value=<%=campground.price%>  class="form-control"min='1.00' step="0.1" required>
+                </div>
+            <div class="form-group">
+                <input type="text" name="Edit[desc]" value=<%=campground.description%> class="form-control"required>
+                </div>
+            <div class="form-group">
+            <input type="submit" class="btn btn-primary form--control">
+        </div>
+        </form>
+
+    </div>
+</div>
+
+
+<% include ../partials/footer.ejs%></div>
